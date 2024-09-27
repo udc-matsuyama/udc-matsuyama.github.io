@@ -227,3 +227,32 @@ ul li a:hover {
 .info-table a.btn:hover {
     background-color: #a60229;
 }
+
+/* レスポンシブデザイン用のメディアクエリ */
+@media (max-width: 768px) { /* 画面幅が768px以下の場合に適用 */
+    .navbar {
+        flex-direction: column; /* ナビゲーションリンクを縦に並べる */
+        align-items: flex-start; /* 左揃えにする */
+    }
+
+    .nav-links {
+        flex-direction: column; /* リンクを縦に並べる */
+        width: 100%; /* リンクリストを幅いっぱいに */
+        padding: 0; /* リストの余白をなくす */
+    }
+
+    .nav-links li {
+        width: 100%; /* リスト項目も幅いっぱいに */
+        border-bottom: 1px solid #ccc; /* 各リンクの間にボーダーを追加 */
+    }
+
+    .nav-links li a {
+        padding: 15px; /* 各リンクのパディングを調整 */
+        display: block; /* リンクをブロック要素にして幅いっぱいに */
+        text-align: left; /* リンク内のテキストを左揃え */
+    }
+
+    .navbar .logo img {
+        height: 40px; /* ロゴ画像の高さを少し小さくする */
+    }
+}
