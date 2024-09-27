@@ -252,7 +252,7 @@ ul li a:hover {
     }
 
     .nav-links li a {
-        padding: 15px; /* 各リンクのパディングを調整 */
+        padding: 5px; /* 各リンクのパディングを調整 */
         display: block; /* リンクをブロック要素にして幅いっぱいに */
         text-align: left; /* リンク内のテキストを左揃え */
     }
