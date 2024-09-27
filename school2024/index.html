@@ -76,5 +76,20 @@
         </div>
         --->
     </footer>
+
+    <script>
+        // ナビゲーションバーの高さを取得して、bodyにpadding-topを設定する関数
+        function adjustBodyPadding() {
+            var navbar = document.querySelector('.header');
+            var navbarHeight = navbar.offsetHeight;
+            document.body.style.paddingTop = navbarHeight + 'px';
+        }
+    
+        // ページ読み込み時に調整
+        window.onload = adjustBodyPadding;
+    
+        // ウィンドウのサイズ変更時に再調整
+        window.onresize = adjustBodyPadding;
+    </script>
 </body>
 </html>

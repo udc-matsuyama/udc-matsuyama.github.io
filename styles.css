@@ -26,7 +26,6 @@ body {
     width: 95%; /* ナビゲーションバーを画面いっぱいに */
     padding: 0 50px;
     box-sizing: border-box; /* パディングを含めた幅計算 */
-    background-color: #ffffff; /* 背景色を再設定 */
 }
 
 .logo img {
@@ -263,6 +262,6 @@ ul li a:hover {
     }
 
     body {
-        padding-top: 120px; /* ナビゲーションバーの高さ分余白を追加 */
+        padding-top: 150px; /* ナビゲーションバーの高さ分余白を追加 */
     }
 }
