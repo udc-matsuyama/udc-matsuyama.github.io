@@ -3,7 +3,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 60px; /* ナビゲーションバーの高さ分の余白を追加 */
     background-color: #ffffff;
     color: #333;
 }
@@ -11,8 +11,11 @@ body {
 .header {
     background-color: #ffffff;
     padding: 10px 0; /* ロゴ画像のために余白を減らす */
-    width: 90%;
-    
+    width: 100%;
+    position: fixed; /* ナビゲーションバーを固定位置に */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* コンテンツよりも前面に表示 */
 }
 
 .navbar {
@@ -20,8 +23,10 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 50px; /* ナビゲーションバーの高さを固定 */
-    width: 100%; /* ナビゲーションバーを画面いっぱいに */
-    padding: 0 100px;
+    width: 95%; /* ナビゲーションバーを画面いっぱいに */
+    padding: 0 50px;
+    box-sizing: border-box; /* パディングを含めた幅計算 */
+    background-color: #ffffff; /* 背景色を再設定 */
 }
 
 .logo img {
@@ -231,14 +236,15 @@ ul li a:hover {
 /* レスポンシブデザイン用のメディアクエリ */
 @media (max-width: 768px) { /* 画面幅が768px以下の場合に適用 */
     .navbar {
-        flex-direction: column; /* ナビゲーションリンクを縦に並べる */
-        align-items: flex-start; /* 左揃えにする */
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto; /* 高さを自動調整 */
+        padding: 10px 20px; /* パディングを調整 */
     }
 
     .nav-links {
         flex-direction: column; /* リンクを縦に並べる */
         width: 100%; /* リンクリストを幅いっぱいに */
-        padding: 0; /* リストの余白をなくす */
     }
 
     .nav-links li {
@@ -254,5 +260,9 @@ ul li a:hover {
 
     .navbar .logo img {
         height: 40px; /* ロゴ画像の高さを少し小さくする */
+    }
+
+    body {
+        padding-top: 120px; /* ナビゲーションバーの高さ分余白を追加 */
     }
 }
