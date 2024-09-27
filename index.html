@@ -5,28 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organization Homepage</title>
     <link rel="stylesheet" href="styles.css"> <!-- CSSファイルをリンク -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet"> <!-- おしゃれなフォントを追加 -->
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="school2024/index.html">スマートシティスクール2024</a>
-    </div>
-    <div class="content">
-        <h1>Welcome to Our Organization Homepage</h1>
-        <p>Welcome to our organization's homepage. Here you'll find information about our projects, initiatives, and resources.</p>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/udcm_weblogo.jpg" alt="UDCM Logo"> <!-- ロゴ画像の追加 -->
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="school2024/index.html">スマートシティスクール2024</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>松山アーバンデザインセンター <br> スマートシティプロジェクト</h1>
+            <p>Urban Design Center Matsuyama Smart City Project</p>
+            <!--
+            <a href="school2024/index.html" class="btn">Learn More</a>
+            -->
+        </div>
+    </section>
+    <section class="projects">
+        <div class="heading-container">
+            <h2>プロジェクト一覧</h2>
+        </div>
 
-        <h2>プロジェクト一覧</h2>
-        <ul>
-            <li><a href="school2024/index.html">スマートシティスクール2024</a> - 未来の都市を設計するための最新プロジェクト</li>
-            <!-- 他のプロジェクトやリポジトリへのリンクをここに追加できます -->
-        </ul>
-
-        <h2>リンク集</h2>
-        <ul>
-            <li><a href="https://example.com">外部リンク1</a></li>
-            <li><a href="https://example.com">外部リンク2</a></li>
-            <!-- 他のリンクをここに追加できます -->
-        </ul>
-    </div>
+        <div class="content-container"></div>
+            <div class="card-container">
+                <div class="card">
+                    <h3>アーバンデザイン・スマートシティスクール松山 2024</h3>
+                    <p>地域資源を生かし、新たな公共空間の構想と計画を実践する参加型学習プログラム。松山の都市交通データの分析を通して将来の都市像を考えます。</p>
+                    <a href="school2024/index.html" class="btn">詳細を見る</a>
+                </div>
+                <!-- 他のプロジェクトのカードを追加可能 -->
+            </div>
+        </div>
+    </section>
+    <section class="links">
+        <div class="heading-container">
+            <h2>リンク集</h2>
+        </div>
+        <div class="content-container">
+            <ul>
+                <li><a href="https://udcm.jp">松山アーバンデザインセンター</a></li>
+                <li><a href="https://github.com/udc-matsuyama/">GitHub</a></li>
+                <!-- 他のリンクをここに追加できます -->
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <!--
+        <div class="container">
+            <p>&copy; 2024 Organization. All rights reserved.</p>
+        </div>
+         -->
+    </footer>
 </body>
 </html>
