@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>解説7 - スマートシティスクール2024</title>
+    <link rel="stylesheet" href="../../styles.css"> <!-- CSSファイルをリンク -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet"> <!-- おしゃれなフォントを追加 -->
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../../index.html" class="logo">
+                <img src="../../images/udcm_weblogo.jpg" alt="UDCM Logo"> <!-- ロゴ画像の追加 -->
+            </a>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../index.html">スマートシティスクール2024</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <div class="heading-container">
+            <h1>解説 7</h1>
+        </div>
+        <div class="content-container">
+            <p>
+                距離帯・年齢別の交通手段分担率を図1に示します。
+            </p>
+
+            <div class="figure_wide">
+                <img src="picture/mode_share_age_dist.png" alt="年齢・距離別の交通手段分担率">
+                <p class="caption">図1：年齢・距離別の交通手段分担率</p>
+            </div>
+
+            <p>    
+                200m未満の移動でも、23〜69歳の年代では、3割から4割程度の移動が自動車で行われています。
+                500mまでの移動では、徒歩と自転車による移動が全体の半分以上を占めますが、500m以上では自動車の割合が卓越し、500m-1kmでは50%、1km-2kmでは62%、2km-5kmでは73-74%、5km以上では約8割を占めます。
+            </p>
+            <p>
+                一方、若年層は徒歩と自転車で移動する距離が他の年代より顕著に長いです。
+                200m〜500mの移動について、29歳以下は70〜88%が徒歩と自転車で移動し、他の年代より20〜30%ほど高くなっています。
+                500m〜1kmの距離帯でも、18歳以下は74%、19〜22歳は56%、23〜29歳は59%が徒歩と自転車で移動します。
+                一方で、30歳代以上では、500m〜1kmの距離帯について、5割から6割の移動が自動車で行われます。
+            </p>
+            <p>
+                若年層の中距離の移動には、原付・二輪が多く使われることも特徴的です。
+                特に、19〜22歳の大学生の年代では、1km〜10kmの移動の2割から3割が原付・二輪であり、自転車と並んで若年層の中距離移動の重要な交通手段となっています。
+            </p>
+            <p>
+                3km以上の移動には、20歳代を中心に鉄道の利用が増加します。
+                特に、19〜22歳の3km〜5kmの移動や、29歳以下の5km〜10kmの移動の1割が鉄道によるものです。
+                路面電車は、23〜29歳の1km〜2kmの移動で5%を占め、1km〜3kmの距離帯の移動に比較的よく使われています。
+                これらのことから、20歳代以下の徒歩・自転車・公共交通を組み合わせた移動を、今後も継続してもらう政策的取り組みや、30歳代以上の年代にも広げていくことが、公共交通中心のまちづくりのために必要といえます。
+
+            </p>
+
+            <div class="highlight">
+                23〜69歳の年代は、200m未満の移動でも3〜4割の移動が自動車で行われ、500m以上の移動は6〜9割が自動車である。一方、19〜22歳の大学生年代の交通手段選択は特異的で、近距離は徒歩・自転車、中距離は自転車・原付、長距離は鉄道の利用が、それ以降の年代と比較して卓越している。
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <!--
+        <div class="container">
+            <p>&copy; 2024 Organization. All rights reserved.</p>
+        </div>
+        --->
+    </footer>
+
+    <script>
+        // ナビゲーションバーの高さを取得して、bodyにpadding-topを設定する関数
+        function adjustBodyPadding() {
+            var navbar = document.querySelector('.header');
+            var navbarHeight = navbar.offsetHeight;
+            document.body.style.paddingTop = navbarHeight + 'px';
+        }
+    
+        // ページ読み込み時に調整
+        window.onload = adjustBodyPadding;
+    
+        // ウィンドウのサイズ変更時に再調整
+        window.onresize = adjustBodyPadding;
+    </script>
+</body>
+</html>

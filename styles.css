@@ -265,3 +265,72 @@ ul li a:hover {
         padding-top: 150px; /* ナビゲーションバーの高さ分余白を追加 */
     }
 }
+
+
+.highlight {
+    padding: 15px;
+    border: 1px solid #ff4d4d;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 20px 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+table caption {
+    caption-side: top;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+table th, table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+table th {
+    background-color: #f0f0f0;
+}
+
+.figure {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+.figure_wide {
+    text-align: center;
+    margin: 30px -200px;
+}
+
+.figure_wide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.subfigure {
+    margin-bottom: 20px;
+}
+
+.subfigure img {
+    max-width: 100%;
+    height: auto;
+}
+
+.subcaption {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.caption {
+    margin-top: 15px;
+    font-weight: bold;
+}
+

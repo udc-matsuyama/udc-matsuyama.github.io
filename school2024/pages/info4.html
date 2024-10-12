@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>解説4 - スマートシティスクール2024</title>
+    <link rel="stylesheet" href="../../styles.css"> <!-- CSSファイルをリンク -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet"> <!-- おしゃれなフォントを追加 -->
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../../index.html" class="logo">
+                <img src="../../images/udcm_weblogo.jpg" alt="UDCM Logo"> <!-- ロゴ画像の追加 -->
+            </a>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../index.html">スマートシティスクール2024</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <div class="heading-container">
+            <h1>解説 4</h1>
+        </div>
+        <div class="content-container">
+            <p>
+                子育て世帯の大人の食事・社交・娯楽・観光目的のトリップの出発地・目的地分布を図1に示します。
+                25〜59歳の人口全体と比較して、松山市1区 (市駅、大街道、松山城)のゾーンの割合が小さく、松前町、東温市1区 (横河原駅、愛大医学部)、砥部町1区 (砥部町中心部、動物園)のゾーンの割合が大きいです。
+                このことから、中心部には子育て世帯にとって魅力的な目的地が少なく、郊外のショッピングセンターやレジャー施設が選択されている、と考えられます。
+            </p>
+            <div class="figure">
+                <div class="subfigure">
+                    <img src="picture/connection_子育て_食事_社交_娯楽_観光.png" alt="子育て世帯の大人" style="width:70%;">
+                    <p class="subcaption">(a) 子育て世帯の大人</p>
+                </div>
+                <br>
+                <div class="subfigure">
+                    <img src="picture/connection_大人_食事_社交_娯楽_観光.png" alt="25〜59歳の人口全体" style="width:70%;">
+                    <p class="subcaption">(b) 25〜59歳の人口全体</p>
+                </div>
+                <p class="caption">図1：食事・社交・娯楽・観光目的の出発地（左列）と到着地（右列）</p>
+            </div>
+            
+        </div>
+    </section>
+    <footer class="footer">
+        <!--
+        <div class="container">
+            <p>&copy; 2024 Organization. All rights reserved.</p>
+        </div>
+        --->
+    </footer>
+
+    <script>
+        // ナビゲーションバーの高さを取得して、bodyにpadding-topを設定する関数
+        function adjustBodyPadding() {
+            var navbar = document.querySelector('.header');
+            var navbarHeight = navbar.offsetHeight;
+            document.body.style.paddingTop = navbarHeight + 'px';
+        }
+    
+        // ページ読み込み時に調整
+        window.onload = adjustBodyPadding;
+    
+        // ウィンドウのサイズ変更時に再調整
+        window.onresize = adjustBodyPadding;
+    </script>
+</body>
+</html>
