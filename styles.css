@@ -334,3 +334,26 @@ table th {
     font-weight: bold;
 }
 
+/* コンテナ全体のスタイル */
+.pdf-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* 各PDFとタイトルのコンテナ */
+  .pdf-item-container {
+    text-align: center; /* タイトルを中央に揃える */
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  /* 各iframeのスタイル */
+  .pdf-item {
+    width: 100%; /* iframeがコンテナに合わせて拡張する */
+    height: 600px;
+  }
+  
